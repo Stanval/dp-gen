@@ -1,0 +1,23 @@
+
+//colors
+$dark-color: #4b4b4b;
+$light-color: #ffffff;
+$accent-color: #3eb8b4;
+$accent-alt-color: #bdffd3;
+
+
+//generic
+%row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+%col {
+    @extend %row;
+    flex-direction: column;
+}
+
+%padding30 {
+    padding: 30px;
+}
