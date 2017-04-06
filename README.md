@@ -1,18 +1,10 @@
 # dp-gen
 
-> Dialpeer generator
+App for creation MVTS softswitch dialpeer configuration from tabular csv file.
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Workflow:
+1. Click "Choose file" button and select the file. (Sample data files could be found in the project root)
+2. Every dialpeer section could have title prefix. The prefix could be applied via prefix input field.
+3. Every dialpeer section could have list of allowed gateway groups. They could be specified via group input field.
+4. Destination pattern are described with regular expressions. For readability purpose rows with dial patters could be limited in length. Default value is 60 characters.
+5. Dialpeer could be created with diffirent priorities. Dialpeers with higher priorities overrides dialpeers with lower priorities in the dialpeer.cfg file.
